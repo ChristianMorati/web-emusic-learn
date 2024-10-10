@@ -1,0 +1,35 @@
+.end-game {
+    text-align: center;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end-game-title {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.end-game-score {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ffda79;
+}
+
+.play-again-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-again-btn:hover {
+    background-color: #005F73;
+}

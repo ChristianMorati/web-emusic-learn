@@ -1,0 +1,110 @@
+{
+    "C": [
+        { "representation": "C", "name": "dó" },
+        { "representation": "D", "name": "ré" },
+        { "representation": "E", "name": "mi" },
+        { "representation": "F", "name": "fá" },
+        { "representation": "G", "name": "sol" },
+        { "representation": "A", "name": "lá" },
+        { "representation": "B", "name": "si" }
+    ],
+    "C#": [
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "F", "name": "fá" },
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "C", "name": "dó" }
+    ],
+    "D": [
+        { "representation": "D", "name": "ré" },
+        { "representation": "E", "name": "mi" },
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G", "name": "sol" },
+        { "representation": "A", "name": "lá" },
+        { "representation": "B", "name": "si" },
+        { "representation": "C#", "name": "dó#" }
+    ],
+    "D#": [
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "F", "name": "fá" },
+        { "representation": "G", "name": "sol" },
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "C", "name": "dó" },
+        { "representation": "D", "name": "ré" }
+    ],
+    "E": [
+        { "representation": "E", "name": "mi" },
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A", "name": "lá" },
+        { "representation": "B", "name": "si" },
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D#", "name": "ré#" }
+    ],
+    "F": [
+        { "representation": "F", "name": "fá" },
+        { "representation": "G", "name": "sol" },
+        { "representation": "A", "name": "lá" },
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "C", "name": "dó" },
+        { "representation": "D", "name": "ré" },
+        { "representation": "E", "name": "mi" }
+    ],
+    "F#": [
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "B", "name": "si" },
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "F", "name": "fá" }
+    ],
+    "G": [
+        { "representation": "G", "name": "sol" },
+        { "representation": "A", "name": "lá" },
+        { "representation": "B", "name": "si" },
+        { "representation": "C", "name": "dó" },
+        { "representation": "D", "name": "ré" },
+        { "representation": "E", "name": "mi" },
+        { "representation": "F#", "name": "fá#" }
+    ],
+    "G#": [
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "C", "name": "dó" },
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "F", "name": "fá" },
+        { "representation": "G", "name": "sol" }
+    ],
+    "A": [
+        { "representation": "A", "name": "lá" },
+        { "representation": "B", "name": "si" },
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D", "name": "ré" },
+        { "representation": "E", "name": "mi" },
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G#", "name": "sol#" }
+    ],
+    "A#": [
+        { "representation": "A#", "name": "lá#" },
+        { "representation": "C", "name": "dó" },
+        { "representation": "D", "name": "ré" },
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "F", "name": "fá" },
+        { "representation": "G", "name": "sol" },
+        { "representation": "A", "name": "lá" }
+    ],
+    "B": [
+        { "representation": "B", "name": "si" },
+        { "representation": "C#", "name": "dó#" },
+        { "representation": "D#", "name": "ré#" },
+        { "representation": "E", "name": "mi" },
+        { "representation": "F#", "name": "fá#" },
+        { "representation": "G#", "name": "sol#" },
+        { "representation": "A#", "name": "lá#" }
+    ]
+}

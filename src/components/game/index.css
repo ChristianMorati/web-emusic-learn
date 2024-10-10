@@ -1,0 +1,26 @@
+.check-answer-button {
+    margin: .5rem;
+    padding: .5rem 1rem;
+    border: none;
+}
+
+.level-infos {
+    display: flex;
+    background-color: #2f2f2f;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    & p.level-display {
+        margin-bottom: 25px;
+    }
+
+    p:first-child {
+        color: red;
+    }
+}
+
+.level-display {
+    font-weight: bold;
+    color: #ffda79;
+}
