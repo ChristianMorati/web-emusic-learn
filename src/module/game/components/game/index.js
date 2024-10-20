@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import ChordSVG from "react-chord-svg";
 import confetti from 'canvas-confetti';
-import EndGame from '../end-game';
-import Guitar from '../guitar';
 import "./index.css";
-import GameProgressBar from '../game-progress-bar/index';
-import ChordRefenceGuide from '../chord-reference-guide';
+import Header from '../../../../components/header';
+import GameProgressBar from '../game-progress-bar';
+import Guitar from '../guitar';
+import EndGame from '../end-game';
 
 const Game = () => {
     const [actualChord, setActualChord] = useState({
@@ -100,18 +99,21 @@ const Game = () => {
     const getActualtitle = () => { return levels[actualLevel].title; }
     const getActualChordName = () => { return levels[actualLevel].chordName; }
 
-    const objective = `Faça a partir da ${getActualStartPosition()}a casa forme ${getActualtitle()}`;
+    const objective = `A partir da ${getActualStartPosition()}ª casa forme ${getActualtitle()}`;
 
     return (
         <div>
+            <Header />
             {!isHideBoard ? (
                 <div className="level-infos">
-                    <p className="level-display">Nível {actualLevel + 1}</p>
-                    <p className="level-display">{objective}</p>
-                    <GameProgressBar
-                        levelsLength={levels.length}
-                        pontuation={pontuation}
-                    />
+                    <div className="progress-bar-container">
+                        <p className="">Nível {actualLevel + 1}</p>
+                        <GameProgressBar
+                            levelsLength={levels.length}
+                            pontuation={pontuation}
+                        />
+                    </div>
+                    <p>{objective}</p>
                 </div>
             ) : (
                 <EndGame pontuation={pontuation} levels={levels} handleRestart={handleRestart} />
@@ -140,15 +142,11 @@ const Game = () => {
                                 }}>
                                 {hasAnswer() ? "Proseguir" : "Confirmar"}
                             </button>
-                            {hasAnswer() && (
-                                <p>{res === true ? "Right answer" : "Wrong answer"}</p>
-                            )}
                         </div>
                     )}
                 </div>
             )}
             <div>
-                <ChordRefenceGuide chordName={getActualChordName()} />
             </div>
 
             {/* <div className='chord-svg'>

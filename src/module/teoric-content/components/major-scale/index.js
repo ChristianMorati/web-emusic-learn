@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { GuitarNotesGenerator } from '../../../../components/guitar/guitar-notes-generator';
+import { GuitarNotesGenerator } from '../../../game/components/guitar/guitar-notes-generator';
 
 const MajorScale = ({ rootNote }) => {
     const GUITAR = new GuitarNotesGenerator();

@@ -1,0 +1,95 @@
+.teoric-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.icons {
+    font-size: medium;
+}
+
+.answer {
+    min-height: 50px;
+    border-radius: 4px;
+}
+
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.answer.hint {
+    animation: blink 1s infinite;
+}
+
+.hint-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.answer {
+    width: 100%;
+    color: #333;
+    border: 2px solid brown;
+    background-color: red;
+}
+
+.answer:hover {
+    background-color: #007bff;
+    border: 1px dashed;
+}
+
+.hint {
+    background-color: #ffc107;
+    /* Cor de fundo para a dica */
+    color: lightgray;
+    font-weight: bold;
+}
+
+.answer.correct {
+    border: 2px solid green;
+}
+
+.answer.incorrect {
+    border: 2px solid red;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@keyframes blink {
+    50% {
+        background-color: rgb(236, 236, 144);
+        color: black;
+        border: 1px dashed;
+    }
+}

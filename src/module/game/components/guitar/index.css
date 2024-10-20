@@ -1,0 +1,166 @@
+.guitar {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 6px solid;
+    border-bottom: 6px solid;
+    padding: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    background-color: burlywood;
+    background-image: url(http://www.transparenttextures.com/patterns/wood-pattern.png);
+}
+
+.fretBoard {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    white-space: nowrap;
+}
+
+.fretBoard-left-continer {
+    flex: 0 0 30%;
+    text-align: right;
+}
+
+.string-container {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.string-name {
+    margin: 0;
+}
+
+.each-string-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0;
+    /* Permite que os itens encolham adequadamente */
+}
+
+.string-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    aspect-ratio: 1/1;
+    margin-bottom: 3px;
+}
+
+.note-container {
+    width: 35px;
+    /* Ajustado para um tamanho mais compacto */
+    height: 20px;
+    /* Ajustado para um tamanho mais compacto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.note-container:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.selected {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.muted {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.last-item-container {
+    flex: 0 0 40px;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.note-result-container {
+    position: relative;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.is-right-note {
+    color: green;
+}
+
+.is-wrong-note {
+    color: red;
+}
+
+.fret-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .fretBoard-left-continer {
+        flex: 0 0 25%;
+    }
+
+    .string-icon {
+        flex: 0 0 20px;
+        /* Reduzido */
+    }
+
+    .note-container {
+        width: 30px;
+        /* Ajustado */
+        height: 30px;
+        /* Ajustado */
+    }
+
+    .each-string-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px) {
+    .guitar {
+        padding: 10px;
+    }
+
+    .fret-number {
+        font-size: 12px;
+    }
+
+    .note-container {
+        width: 20px;
+        /* Ajustado */
+        height: 20px;
+        /* Ajustado */
+    }
+
+    .string-icon {
+        flex: 0 0 20px;
+        /* Ícone ainda menor */
+    }
+
+    .each-string-container {
+        justify-content: space-around;
+    }
+}

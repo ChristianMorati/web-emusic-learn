@@ -1,0 +1,53 @@
+.level-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.level-display:first-of-type {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.level-display:last-of-type {
+    font-weight: normal;
+    color: #555;
+}
+
+.response-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.check-answer-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    /* Reduzido para 0.9rem */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.check-answer-button:hover {
+    background-color: #45a049;
+}
+
+.check-answer-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    .level-infos {
+        padding: 8px;
+    }
+}

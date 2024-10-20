@@ -1,0 +1,88 @@
+:root {
+    --width: 45px;
+    --height: 45px;
+}
+
+.chord-reference-guide {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.box-width {
+    width: var(--width);
+    height: var(--height);
+    border: 1px solid;
+}
+
+.diagonal-div {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.right-content {
+    align-self: flex-start;
+    margin-left: 2px;
+}
+
+.diagonal-line {
+    position: absolute;
+    width: 50px;
+    transform: rotate(-45deg);
+    border: 0.5px solid;
+}
+
+.left-content {
+    align-self: flex-end;
+    margin-right: 2px;
+}
+
+.content-center {
+    display: grid;
+    place-items: center;
+}
+
+.box-width+.box-width {
+    border-top: none;
+}
+
+@media (max-width: 320px) {
+    :root {
+        --width: 40px;
+        --height: 40px;
+    }
+
+    .chord-reference-guide {
+        padding: 0.2rem;
+        font-size: .85rem;
+    }
+
+    .diagonal-div {
+        border-width: 0.5px;
+    }
+
+    .diagonal-line {
+        width: 55px;
+    }
+
+    .right-content,
+    .left-content {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .box-width {
+        width: var(--width);
+        height: var(--height);
+    }
+}

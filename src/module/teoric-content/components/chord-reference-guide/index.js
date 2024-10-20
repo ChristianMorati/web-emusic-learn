@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { GuitarNotesGenerator } from '../guitar/guitar-notes-generator';
+import { GuitarNotesGenerator } from '../../../game/components/guitar/guitar-notes-generator';
 
 const ChordRefenceGuide = ({ chordName = "C" }) => {
 
@@ -24,7 +24,7 @@ const ChordRefenceGuide = ({ chordName = "C" }) => {
                         {index % 3 === 0 && (
                             <div>
                                 <div className="box-width content-center">{chords[count].representation}</div>
-                                <div className='content-center box-width'>{GUITAR.scaleDegrees[index]}</div>
+                                <div className='content-center box-width'>{GUITAR.scaleDegrees[index]}ª</div>
                             </div>
                         )}
 
@@ -35,9 +35,9 @@ const ChordRefenceGuide = ({ chordName = "C" }) => {
                                     {chords[count].representation}
                                 </div>
                                 <div className="diagonal-div box-width">
-                                    <div className='right-content'>{GUITAR.scaleDegrees[index]}</div>
+                                    <div className='right-content'>{GUITAR.scaleDegrees[index]}ª</div>
                                     <div className="diagonal-line" />
-                                    <div className='left-content'>{GUITAR.scaleDegrees[index + 1]}</div>
+                                    <div className='left-content'>{GUITAR.scaleDegrees[index + 1]}ª</div>
                                 </div>
                             </div>
                         )}

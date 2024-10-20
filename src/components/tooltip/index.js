@@ -42,24 +42,20 @@ z-index: 1;
   & ${TooltipText}:hover + ${TooltipBox} {
     visibility: visible;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0);
     width: 230px;
-    padding: 8px 8px;
-    &:before {
-      border-color: transparent transparent rgba(0, 0, 0, 0.8)
-        rgba(0, 0, 0, 0.8);
-    }
+    z-index: 2;
   }
 `;
-export default function ToolTip({hoverText, toolTipText}) {
-    return (
-        <TooltipCard>
-            <TooltipText>
-                <p>{hoverText}</p>
-            </TooltipText>
-            <TooltipBox>
-                <p>{toolTipText}</p>
-            </TooltipBox>
-        </TooltipCard>
-    );
+export default function ToolTip({ hoverText, toolTipText }) {
+  return (
+    <TooltipCard>
+      <TooltipText>
+        <p>{hoverText}</p>
+      </TooltipText>
+      <TooltipBox>
+        <p>{toolTipText}</p>
+      </TooltipBox>
+    </TooltipCard>
+  );
 }
