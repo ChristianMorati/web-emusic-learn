@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/web-emusic-learn/static/css/main.121ad212.css",
+    "main.js": "/web-emusic-learn/static/js/main.61bb61b1.js",
+    "static/media/guitar-parts.png": "/web-emusic-learn/static/media/guitar-parts.fed00be38ca2326211a6.png",
+    "static/media/major-scale-table.jpeg": "/web-emusic-learn/static/media/major-scale-table.463e686c7d837ec8ca46.jpeg",
+    "static/media/general-definitions.jpeg": "/web-emusic-learn/static/media/general-definitions.b22f05820f27bdb793a1.jpeg",
+    "static/media/guitar-parts-2.jpeg": "/web-emusic-learn/static/media/guitar-parts-2.fcb8cd617315c0d48e74.jpeg",
+    "static/media/more-definitions.jpeg": "/web-emusic-learn/static/media/more-definitions.b5a82d6b36f66032357c.jpeg",
+    "index.html": "/web-emusic-learn/index.html",
+    "main.121ad212.css.map": "/web-emusic-learn/static/css/main.121ad212.css.map",
+    "main.61bb61b1.js.map": "/web-emusic-learn/static/js/main.61bb61b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.121ad212.css",
+    "static/js/main.61bb61b1.js"
+  ]
+}
