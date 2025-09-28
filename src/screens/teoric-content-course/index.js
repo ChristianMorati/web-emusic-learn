@@ -10,18 +10,18 @@ import GuitarLegend, { dinamicLegend } from '../../module/teoric-content/compone
 import { GuitarNotesGenerator } from '../../module/game/components/guitar/guitar-notes-generator';
 import Guitar from '../../module/game/components/guitar';
 
-import tipIcon from '../../../public/icons/tip.png';
+import tipIcon from '../../assets/icons/tip.png';
 import MinorChordTrick from '../../module/teoric-content/components/minor-chord-trick';
 import { firstFretChordExamples } from './data/second-chord-shape-on-the-sixth-string';
 import { legendColors } from '../../module/teoric-content/components/guitar-legend/style';
 import TopicTitle from '../../module/teoric-content/components/topic';
 import { Subtitle } from '../../styled-components/text/subtitle';
-import guitar_parts_img from '../../../public/img/guitar-parts.png';
+import guitar_parts_img from '../../assets/img/guitar-parts.png';
 /* images */
-import general_definitions_img from '../../../public/img/general-definitions.jpeg';
-import more_definitions_img from '../../../public/img/more-definitions.jpeg';
-import guitar_parts_2_img from '../../../public/img/guitar-parts-2.jpeg';
-import major_scale_table from '../../../public/img/major-scale-table.jpeg';
+import general_definitions_img from '../../assets/img/general-definitions.jpeg';
+import more_definitions_img from '../../assets/img/more-definitions.jpeg';
+import guitar_parts_2_img from '../../assets/img/guitar-parts-2.jpeg';
+import major_scale_table from '../../assets/img/major-scale-table.jpeg';
 /* images /> */
 
 const GUITAR = new GuitarNotesGenerator();
