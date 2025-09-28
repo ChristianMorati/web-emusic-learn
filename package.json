@@ -2,7 +2,6 @@
   "name": "web-erp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ChristianMorati.github.io/web-emusic-learn",
   "dependencies": {
     "@supabase/supabase-js": "^2.45.4",
     "canvas-confetti": "^1.9.3",
