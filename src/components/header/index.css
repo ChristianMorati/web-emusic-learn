@@ -1,21 +1,31 @@
 .header {
+    height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: bisque;
+    justify-content: center;
+    background-color: rgb(66, 49, 29);
     border-bottom: 2px solid rgb(170, 144, 111);
 }
 
-.header-left {
+.header-content {
     display: flex;
-    gap: 10px; /* Espaço entre os botões */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+.header-right {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
 }
 
 .header-button {
-    background-color: #4CAF50;
+    background-color: #c2a032;
+    text-decoration: none;
     color: white;
     border: none;
+    font-weight: bold;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
@@ -27,6 +37,6 @@
 }
 
 .header-title {
-    margin: 0;
-    color: #333;
+    margin-left: 10px;
+    color: #ffffff;
 }

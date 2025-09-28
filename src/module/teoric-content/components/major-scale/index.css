@@ -1,40 +1,48 @@
 .major-scale-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #ffe4c4;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .scale-title {
-    color: #333;
-    margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .scale-notes {
-    color: #555;
-    font-size: 16px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .scale-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #f9f9f9;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff7ed;
 }
 
 .scale-table th,
 .scale-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
+  border: 1px solid #c97a40;
+  padding: 8px;
 }
 
 .scale-table th {
-    background-color: #e0e0e0;
-    text-align: left;
+  background-color: #d2691e;
+  color: #ffffff;
+  text-align: left;
+}
+
+.scale-table td {
+  background-color: #fff7ed;
+  color: #333333;
+  font-weight: 600;
 }
 
 .scale-sequence {
-    margin-top: 20px;
-    color: #333;
+  margin-top: 20px;
+  color: #333;
 }

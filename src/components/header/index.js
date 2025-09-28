@@ -4,9 +4,17 @@ import './index.css';
 export default function Header() {
     return (
         <div className="header">
-            <h2 className="header-title">E-Music Learner</h2>
-            <div className="header-left">
-                <button className="header-button">Teoric</button>
+            <div className="header-content">
+                <div className="header-title">
+                    <h3>
+                        Aprenda o Básico de Violão
+                    </h3>
+                </div>
+                <div className="header-right">
+                    <a className="header-button" href="#chords-section">
+                        Acordes
+                    </a>
+                </div>
             </div>
         </div>
     );

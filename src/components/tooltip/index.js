@@ -37,7 +37,7 @@ const TooltipBox = styled.div`
   }
 `;
 const TooltipCard = styled.div`
-z-index: 1;
+z-index: 999;
   position: relative;
   & ${TooltipText}:hover + ${TooltipBox} {
     visibility: visible;

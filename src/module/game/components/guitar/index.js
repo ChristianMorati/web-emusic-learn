@@ -7,7 +7,7 @@ import { GuitarNotesGenerator } from './guitar-notes-generator.js';
 
 const FretStarPosition = ({ startPosition }) => {
   return (
-    <p className='fret-number' style={{ position: "absolute", top: '-6px'}}>
+    <p className='fret-number' style={{ position: "absolute", top: '-6px' }}>
       {`${startPosition}ª casa`}
     </p>
   );
@@ -63,16 +63,18 @@ const Guitar = ({
               {/* <p className='string-name'>{note}</p> */}
 
               <ToolTip
-                hoverText={`${arr.length - rowIndex}ª - ${note} |`}
+                hoverText={`${arr.length - rowIndex}ª ${note} |`}
                 toolTipText={toolTipTextToShowWhenMutedString(rowIndex)}
               />
-
             </div>
           </div>
 
           <div className='each-string-container'>
+            <hr style={{ position: 'absolute', width: '80%', zIndex: 1 }} />
             <div className='string-icon'>
-              {isMutedString(rowIndex) ? <FcCancel /> : selected[rowIndex] == null ? <FaRegCircle /> : <p>{' '}</p>}
+              {isMutedString(rowIndex) ?
+                <FcCancel /> : selected[rowIndex] == null ?
+                  <FaRegCircle /> : <p>{' '}</p>}
             </div>
             {Array.from({ length: 8 }).map((_, colIndex) => (
               <div key={colIndex}>
@@ -81,7 +83,9 @@ const Guitar = ({
                 )}
 
                 {colIndex === 7 ? (
-                  <div className={`
+                  <div
+                    style={{ zIndex: 2 }}
+                    className={`
                     last-item-container 
                     ${isRightOneNote(rowIndex) ? 'is-right-note' : 'is-wrong-note'}
                     ${res === false || res === true ? 'visible' : 'hidden'}
@@ -92,8 +96,9 @@ const Guitar = ({
                 ) : (
                   <div
                     onClick={() => handleClick(rowIndex, colIndex)}
+                    style={{ zIndex: 2 }}
                     className={`
-                      note-container 
+                      note-container
                       ${isStringSelected(rowIndex, colIndex) ? 'selected' : ''} 
                       ${isMutedString(rowIndex) ? 'muted' : ''}
                     `}

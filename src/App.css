@@ -1,12 +1,11 @@
 .app {
-    padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: bisque;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    user-select: none;
-    color: 'red';
-    background-color: bisque;
+.teoric-content-screen {
+  max-width: 900px;
+  margin: 0 auto;
 }

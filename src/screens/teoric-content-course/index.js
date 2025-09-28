@@ -189,20 +189,21 @@ const TeoricContentScreen = () => {
     return (
         <div className='teoric-content-screen'>
 
-            <TopicTitle sectionNumber={1} sectionParagraph={'O início...'} />
-
-            <ContentTeoric
-                title={"Conhecendo o instrumento:"}
-                paragraph={'As partes e os seus respectivos nomes:'}
-                representationComponent={
-                    <div className='center'>
-                        <img className='guitar-parts-image' alt='guitar-parts-image' src={guitar_parts_img} />
-                        <img className='guitar-parts-image' alt='guitar-parts-image' src={guitar_parts_2_img} />
-                        <img className='guitar-parts-image' alt='guitar-parts-image' src={general_definitions_img} />
-                        <img className='guitar-parts-image' alt='guitar-parts-image' src={more_definitions_img} />
-                    </div>
-                }
-            />
+            <div >
+                <TopicTitle sectionNumber={1} sectionParagraph={'O início...'} />
+                <ContentTeoric
+                    title={"Conhecendo o instrumento:"}
+                    paragraph={'As partes e os seus respectivos nomes:'}
+                    representationComponent={
+                        <div className='center'>
+                            <img className='guitar-parts-image' alt='guitar-parts-image' src={guitar_parts_img} />
+                            <img className='guitar-parts-image' alt='guitar-parts-image' src={guitar_parts_2_img} />
+                            <img className='guitar-parts-image' alt='guitar-parts-image' src={general_definitions_img} />
+                            <img className='guitar-parts-image' alt='guitar-parts-image' src={more_definitions_img} />
+                        </div>
+                    }
+                />
+            </div>
 
             <ContentTeoric
                 title={"Conhecendo as notas representantes:"}
@@ -307,8 +308,8 @@ const TeoricContentScreen = () => {
                             <ul>
                                 <li><Paragraph><strong>Semi tom</strong> = meio tom (1/2), uma casa á frente ou atrás.</Paragraph></li>
                                 <li><Paragraph><strong>Tom</strong> = semi tom + semi tom, duas casas á frente ou atrás.</Paragraph></li>
-                                <li><Paragraph>A distância entre C e D é de 1 tom (dois semi tons).</Paragraph></li>
-                                <li><Paragraph>De B até C, meio tom.</Paragraph></li>
+                                <li><Paragraph>De B (Si) até C (Dó), meio tom /semi tom.</Paragraph></li>
+                                <li><Paragraph>De E (Mi) até F (Fá), meio tom/semi tom.</Paragraph></li>
                                 <li><Paragraph>De C até C#, meio tom.</Paragraph></li>
                                 <li><Paragraph>De C# até D, mais meio tom.</Paragraph></li>
                                 <li><Paragraph>Logo a distância entre C e D é de <strong>1 tom</strong></Paragraph></li>
@@ -320,10 +321,10 @@ const TeoricContentScreen = () => {
 
             <ContentTeoric
                 title={"Sustenidos"}
-                paragraph={"Chama-se dó sustenido (nota dó aumentada meio (1/2) tom). da esquerda para direita. Veja o exemplo do dó, na 5ª corda, 3ª casa. Onde se encontra o Dó natural:"}
+                paragraph={"Chama-se dó sustenido (nota dó aumentada meio (1/2) tom), da esquerda para direita. Veja o exemplo do dó, na 5ª corda, 3ª casa. Onde se encontra o Dó natural:"}
                 representationComponent={
                     <div>
-                        <ParagraphBold>Dó Sustenido (C#) em azul: 5ª corda, 4ª casa.</ParagraphBold>
+                        <ParagraphBold>Dó Sustenido (C#) em azul: 5ª corda em , 4ª casa.</ParagraphBold>
                         <div className="center">
                             <div className='chord-svg'>
                                 <ChordSVG
@@ -351,14 +352,14 @@ const TeoricContentScreen = () => {
                 }
             />
             <ContentTeoric
-                title={"Bemol(b)"}
+                title={"Bemol (b)"}
                 paragraph={"Chama-se dó bemol (nota dó diminuida em meio (1/2) tom), da direita para esquerda. Veja o exemplo do dó, na 5ª corda 3ª casa. ao descer um semi tom, o ciclo se repete com a última nota no caso do C(Dó) de forma descendente."}
                 representationComponent={
                     <div>
                         <div className="center">
                             <ParagraphBold>Lembra da oitava?</ParagraphBold>
                         </div>
-                        <Paragraph><strong>C (Dó) menos meio tom.</strong>, é o mesmo que o B (Si), última nota da escala natural na oitava abaixo.</Paragraph>
+                        <Paragraph><strong>C (Dó) menos meio tom</strong>, é o mesmo que o B (Si), última nota da escala natural na oitava abaixo.</Paragraph>
                         <div className='center'>
                             <div className='chord-svg'>
                                 <ChordSVG
@@ -439,6 +440,11 @@ const TeoricContentScreen = () => {
                                 )
                             )}
                         </div>
+                        <ul>
+                            <li>
+                                <Paragraph>Ambas as nomenclaturas estão corretas.</Paragraph>
+                            </li>
+                        </ul>
                     </div>
                 }
             />
@@ -489,6 +495,7 @@ const TeoricContentScreen = () => {
                 }
             />
 
+            <div id="chords-section" />
             <ContentTeoric
                 title={"Acorde"}
                 paragraph={"Acorde é o conjunto de notas, tocadas juntas ou arpejdas (tocando uma nota após a outra), seguindo alguns princípios para sua formação."}
@@ -500,14 +507,17 @@ const TeoricContentScreen = () => {
                 representationComponent={
                     <div>
                         <div>
+                            <ul><li>
+                                <ParagraphBold>Tabela 1</ParagraphBold>
+                            </li></ul>
                             <ChordReferenceGuide chordName='C' />
                         </div>
-                        <Paragraph>Um acorde maior, no caso <u><strong>dó maior</strong></u>, tomamos as seguintes notas:</Paragraph>
+                        <Paragraph>Um acorde maior, no caso <u><strong>dó maior (C)</strong></u>, tomamos as seguintes notas:</Paragraph>
                         <ul>
-                            <li><Paragraph>A nota fundamental do acorde que na qual leva o nome do acorde (<strong>C</strong> no caso)</Paragraph></li>
+                            <li><Paragraph>A nota fundamental do acorde que na qual leva o nome do acorde (<strong>C</strong>)</Paragraph></li>
                             <li><Paragraph>Uma terça (<strong>E</strong>)</Paragraph></li>
                             <li><Paragraph>Uma quinta (<strong>G</strong>)</Paragraph></li>
-                            <li><Paragraph>O acorde de dó maior, é formado por <strong>C (Dó)</strong>, <strong> E(Mi)</strong> e <strong>G (Sol)</strong>, no violão você deve tocar somente essas notas combinadas, a corda solta toma como o nome da corda inicial.<strong></strong></Paragraph></li>
+                            <li><Paragraph>O acorde de dó maior, é formado por <strong>C (Dó)</strong>, <strong> E(Mi)</strong> e <strong>G (Sol)</strong>, no violão você deve tocar somente essas notas combinadas. a corda solta toma como o nome da corda inicial.<strong></strong></Paragraph></li>
                         </ul>
 
                         <ParagraphBold>Veja a representação no violão:</ParagraphBold>
@@ -598,7 +608,7 @@ const TeoricContentScreen = () => {
                                 numberOfFrets={5}
                                 notes={firstFretChordExamples[0].major.chord}
                             />
-                            <GuitarLegend data={dinamicLegend('F')}/>
+                            <GuitarLegend data={dinamicLegend('F')} />
                         </div>
                     </div >
                 }
@@ -740,7 +750,7 @@ const TeoricContentScreen = () => {
                                 numberOfFrets={5}
                                 notes={[...item.chord]}
                             />
-                            <GuitarLegend data={dinamicLegend(item.name)}/>
+                            <GuitarLegend data={dinamicLegend(item.name)} />
                         </div>
                     ))}
 
@@ -758,7 +768,7 @@ const TeoricContentScreen = () => {
                                 numberOfFrets={5}
                                 notes={[...item.chord]}
                             />
-                            <GuitarLegend data={dinamicLegend(item.name)}/>
+                            <GuitarLegend data={dinamicLegend(item.name)} />
                         </div>
                     ))}
                 </div>
@@ -772,7 +782,7 @@ const TeoricContentScreen = () => {
                                 numberOfFrets={5}
                                 notes={[...item.chord]}
                             />
-                            <GuitarLegend data={dinamicLegend(item.name)}/>
+                            <GuitarLegend data={dinamicLegend(item.name)} />
                         </div>
                     ))}
                 </div>
@@ -809,7 +819,7 @@ const TeoricContentScreen = () => {
                                                 numberOfFrets={5}
                                                 notes={[...item[labels[index]].chord]}
                                             />
-                                            <GuitarLegend data={dinamicLegend(chordName)}/>
+                                            <GuitarLegend data={dinamicLegend(chordName)} />
                                         </div>
                                     )
                                 })}
