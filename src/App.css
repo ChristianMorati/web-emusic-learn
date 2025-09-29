@@ -7,5 +7,10 @@
 
 .teoric-content-screen {
   max-width: 900px;
-  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .teoric-content-screen {
+    margin: 0 auto;
+  }
 }

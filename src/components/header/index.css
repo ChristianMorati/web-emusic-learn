@@ -8,6 +8,7 @@
 }
 
 .header-content {
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -27,7 +28,7 @@
     border: none;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 8px 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -37,6 +38,17 @@
 }
 
 .header-title {
+    font-size: 13px;
     margin-left: 10px;
     color: #ffffff;
+}
+
+@media (min-width: 900px) {
+    .header-title {
+        font-size: 1rem;
+    }
+
+    .header-button {
+        padding: 10px 15px;
+    }
 }
